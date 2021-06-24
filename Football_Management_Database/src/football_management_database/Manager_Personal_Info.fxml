@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football_management_database.Manager_Personal_InfoController">
+   <children>
+      <TableView fx:id="Manager_Personal_Info_Table" prefHeight="340.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="Manager_ID" prefWidth="199.0" text="Manager_ID" />
+          <TableColumn fx:id="Name" prefWidth="321.0" text="Name" />
+            <TableColumn fx:id="Age" prefWidth="174.0" text="Age" />
+            <TableColumn fx:id="Country" prefWidth="206.0" text="Country" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

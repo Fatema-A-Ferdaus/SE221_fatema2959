@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Football_Management_Database.jnlp">
+  <information>
+    <title>Football_Management_Database</title>
+    <vendor>Lenovo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Football_Management_Database.jar" size="253584" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23.jar" size="843090" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="football_management_database.Football_Management_Database"  name="Football_Management_Database" />
+  <update check="always"/>
+</jnlp>

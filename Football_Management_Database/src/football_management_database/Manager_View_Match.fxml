@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="900.0" style="-fx-background-color: #001202;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football_management_database.Manager_View_MatchController">
+   <children>
+      <Text fill="#37ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal :" wrappingWidth="77.1640625">
+         <VBox.margin>
+            <Insets left="50.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <TextField fx:id="Goal_Match_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_ID">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Goal_Player_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Player_ID">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Goal_No" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Goal_No">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Goal_Match_Time" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_Time">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="Error1" fill="RED" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submission Failed!! Try Again!!">
+         <VBox.margin>
+            <Insets left="300.0" top="15.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom threshold="0.0">
+               <input>
+                  <Glow />
+               </input>
+            </Bloom>
+         </effect>
+      </Text>
+      <Button mnemonicParsing="false" onAction="#Goal_Done" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0be300;" text="Done">
+         <VBox.margin>
+            <Insets left="40.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#3cff00">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fill="#37ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Card :" wrappingWidth="90.662109375">
+         <VBox.margin>
+            <Insets left="50.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <TextField fx:id="Card_Match_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_ID">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Card_Player_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Player_ID ">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Card_Match_Type" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Card_Type">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Card_Match_Time" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_Time">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="Error2" fill="RED" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submission Failed!! Try Again!!">
+         <VBox.margin>
+            <Insets left="300.0" top="15.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom threshold="0.0">
+               <input>
+                  <Glow />
+               </input>
+            </Bloom>
+         </effect>
+      </Text>
+      <Button mnemonicParsing="false" onAction="#Card_Done" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0be300;" text="Done">
+         <VBox.margin>
+            <Insets left="40.0" top="15.0" />
+         </VBox.margin>
+         <effect>
+            <DropShadow color="#3cff00">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fill="#37ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Injury :">
+         <VBox.margin>
+            <Insets left="50.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <TextField fx:id="Injury_Match_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_ID">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Injury_Player_ID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Player_ID">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="Injury_Match_Time" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="820.0" promptText="Enter_Match_Time">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="Error3" fill="RED" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submission Failed!! Try Again!!">
+         <VBox.margin>
+            <Insets left="300.0" top="15.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom>
+               <input>
+                  <Glow />
+               </input>
+            </Bloom>
+         </effect>
+      </Text>
+      <Button mnemonicParsing="false" onAction="#Injury_Done" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0be300;" text="Done">
+         <VBox.margin>
+            <Insets left="40.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#3cff00">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</VBox>

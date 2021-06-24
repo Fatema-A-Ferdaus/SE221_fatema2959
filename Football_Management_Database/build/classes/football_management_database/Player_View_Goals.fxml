@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #001202;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football_management_database.Player_View_GoalsController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Woo!! Hoo!!" textAlignment="CENTER" wrappingWidth="209.494140625">
+         <font>
+            <Font name="Calibri Bold Italic" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="200.0" top="20.0" />
+         </VBox.margin>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.21904761904761905">
+               <stops>
+                  <Stop color="#e5ff00" />
+                  <Stop color="#0db918" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Text fill="#00ff11" strokeType="OUTSIDE" strokeWidth="0.0" text="You have Scored" textAlignment="CENTER" wrappingWidth="166.412109375">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" top="20.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <TextArea fx:id="Goal_Text" editable="false" prefHeight="161.0" prefWidth="166.0" promptText="000" style="-fx-border-color: #646464; -fx-border-radius: 3;">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="220.0" right="650.0" />
+         </VBox.margin>
+         <effect>
+            <DropShadow color="#646464" offsetX="5.0" offsetY="5.0" spread="0.21" />
+         </effect>
+      </TextArea>
+      <Text fill="#00ff11" strokeType="OUTSIDE" strokeWidth="0.0" text="Goals So far!!">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="420.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+   </children>
+</VBox>

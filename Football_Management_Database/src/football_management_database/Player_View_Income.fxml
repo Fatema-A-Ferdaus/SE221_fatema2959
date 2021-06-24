@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football_management_database.Player_View_IncomeController">
+   <children>
+      <TableView fx:id="Player_Income_Table" prefHeight="289.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="Income" prefWidth="465.99998474121094" text="Income" />
+          <TableColumn fx:id="Bonus" prefWidth="433.0" text="Bonus" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football_management_database.Owner_Main_Content_PageController">
+   <top>
+      <VBox prefHeight="96.0" prefWidth="900.0" style="-fx-background-color: #001202;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Owner" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="450.0" top="30.0" />
+               </VBox.margin>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5952380952380952">
+                     <stops>
+                        <Stop color="#e5ff00" />
+                        <Stop color="#00ff09" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Text>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="298.0" prefWidth="170.0" style="-fx-background-color: #001202; -fx-border-color: #75ff66;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Set_Objectives" prefHeight="40.0" prefWidth="172.0" style="-fx-border-color: #75ff66; -fx-background-color: #001202; -fx-border-radius: 3;" text="Set Objectives" textFill="#00ff11">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="14.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Set_Income" prefHeight="40.0" prefWidth="172.0" style="-fx-border-color: #75ff66; -fx-background-color: #001202; -fx-border-radius: 3;" text="Set Income" textFill="#00ff11">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="14.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Log_Out" prefHeight="30.0" prefWidth="172.0" style="-fx-background-color: #ff0000;" text="Log Out" textFill="#fbff00">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="14.0" />
+               </font>
+               <effect>
+                  <Bloom>
+                     <input>
+                        <DropShadow color="RED" height="35.0" radius="18.25" width="40.0" />
+                     </input>
+                  </Bloom>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#75ff66" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="730.0" style="-fx-background-color: #75ff66;" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="Owner_Middle_Content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #001202;" />
+         </content>
+         <effect>
+            <DropShadow color="#75ff66" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <VBox prefHeight="38.0" prefWidth="900.0" style="-fx-background-color: #001202;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
